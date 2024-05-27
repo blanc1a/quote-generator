@@ -6,21 +6,21 @@ const newQuoteBtn = document.getElementById("new-quote");
 const loader = document.getElementById("loader");
 
 //show loading
-function loading() {
+function showLoadingSpinner() {
   //we don't want it to be hidden
   loader.hidden = false;
   quoteContainer.hidden = true;
 }
 
 //hide loading
-function completeLoading() {
+function removeLoadingSpinner() {
   loader.hidden = true;
   quoteContainer.hidden = false;
 }
 
 // GET NEW QUOTE
 function getNewQuote() {
-  loading();
+  showLoadingSpinner();
   //to pick a random quote from the apiQuotes array
   //using [] to make index => to make it dynamically use Math.floor (whole numbers) and Math.random (pick random quote) + * apiQuotes.length (amount of objects in the array: 1643)
   const quote = localQuotes[Math.floor(Math.random() * localQuotes.length)];
@@ -39,7 +39,7 @@ function getNewQuote() {
   }
   //set quote, hide loader
   quoteText.textContent = quote.text;
-  completeLoading();
+  removeLoadingSpinner();
 }
 
 //tweet quote
