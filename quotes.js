@@ -1,404 +1,259 @@
 //good if we want something customizable
 const localQuotes = [
   {
-    text: "Frankly, my dear, I don't give a damn.",
-    author: "Gone with the Wind",
+    text: "It does not do to dwell on dreams and forget to live.",
+    author: "Albus Dumbledore, Harry Potter and the Philosopher's Stone",
   },
   {
-    text: "I'm going to make him an offer he can't refuse.",
-    author: "The Godfather",
+    text: "I solemnly swear that I am up to no good.",
+    author: "Harry Potter, Harry Potter and the Prisoner of Azkaban",
   },
   {
-    text: "You don't understand! I coulda had class. I coulda been a contender. I could've been somebody, instead of a bum, which is what I am.",
-    author: "On the Waterfront",
+    text: "Yer a wizard, Harry.",
+    author: "Rubeus Hagrid, Harry Potter and the Philosopher's Stone",
   },
   {
-    text: "Toto, I've a feeling we're not in Kansas anymore.",
-    author: "The Wizard of Oz",
+    text: "It's not our abilities that show what we truly are… it is our choices.",
+    author: "Albus Dumbledore, Harry Potter and the Chamber of Secrets",
   },
   {
-    text: "Here's looking at you, kid.",
-    author: "Casablanca",
+    text: "Happiness can be found, even in the darkest of times, if one only remembers to turn on the light.",
+    author: "Albus Dumbledore, Harry Potter and the Prisoner of Azkaban",
   },
   {
-    text: "Go ahead, make my day.",
-    author: "Sudden Impact",
+    text: "I am not worried, Harry. I am with you.",
+    author: "Albus Dumbledore, Harry Potter and the Half-Blood Prince",
   },
   {
-    text: "All right, Mr. DeMille, I'm ready for my close-up.",
-    author: "Sunset Boulevard",
+    text: "We’ve all got both light and dark inside us. What matters is the part we choose to act on. That’s who we really are.",
+    author: "Sirius Black, Harry Potter and the Order of the Phoenix",
   },
   {
-    text: "May the Force be with you.",
-    author: "Star Wars",
+    text: "After all this time? Always.",
+    author: "Severus Snape, Harry Potter and the Deathly Hallows",
   },
   {
-    text: "Fasten your seatbelts. It's going to be a bumpy night.",
-    author: "All About Eve",
+    text: "It is our choices, Harry, that show what we truly are, far more than our abilities.",
+    author: "Albus Dumbledore, Harry Potter and the Chamber of Secrets",
   },
   {
-    text: "You talking to me?",
-    author: "Taxi Driver",
+    text: "I am not afraid to keep on living, I am not afraid to walk this world alone.",
+    author: "Unknown, Harry Potter and the Goblet of Fire",
   },
   {
-    text: "What we've got here is failure to communicate.",
-    author: "Cool Hand Luke",
+    text: "Even the smallest person can change the course of the future.",
+    author: "Galadriel, The Lord of the Rings: The Fellowship of the Ring",
   },
   {
-    text: "I love the smell of napalm in the morning.",
-    author: "Apocalypse Now",
-  },
-  {
-    text: "Love means never having to say you're sorry.",
-    author: "Love Story",
-  },
-  {
-    text: "The stuff that dreams are made of.",
-    author: "The Maltese Falcon",
-  },
-  {
-    text: "E.T. phone home.",
-    author: "E.T. the Extra-Terrestrial",
-  },
-  {
-    text: "They call me Mister Tibbs!",
-    author: "In the Heat of the Night",
-  },
-  {
-    text: "Rosebud.",
-    author: "Citizen Kane",
-  },
-  {
-    text: "Made it, Ma! Top of the world!",
-    author: "White Heat",
-  },
-  {
-    text: "I'm as mad as hell, and I'm not going to take this anymore!",
-    author: "Network",
-  },
-  {
-    text: "Louis, I think this is the beginning of a beautiful friendship.",
-    author: "Casablanca",
-  },
-  {
-    text: "A census taker once tried to test me. I ate his liver with some fava beans and a nice Chianti.",
-    author: "The Silence of the Lambs",
-  },
-  {
-    text: "Bond. James Bond.",
-    author: "Dr. No",
-  },
-  {
-    text: "There's no place like home.",
-    author: "The Wizard of Oz",
-  },
-  {
-    text: "I am big! It's the pictures that got small.",
-    author: "Sunset Boulevard",
-  },
-  {
-    text: "Show me the money!",
-    author: "Jerry Maguire",
-  },
-  {
-    text: "Why don't you come up sometime and see me?",
-    author: "She Done Him Wrong",
-  },
-  {
-    text: "I'm walking here! I'm walking here!",
-    author: "Midnight Cowboy",
-  },
-  {
-    text: "Play it, Sam. Play 'As Time Goes By.'",
-    author: "Casablanca",
-  },
-  {
-    text: "You can't handle the truth!",
-    author: "A Few Good Men",
-  },
-  {
-    text: "I want to be alone.",
-    author: "Grand Hotel",
-  },
-  {
-    text: "After all, tomorrow is another day!",
-    author: "Gone with the Wind",
-  },
-  {
-    text: "Round up the usual suspects.",
-    author: "Casablanca",
-  },
-  {
-    text: "I'll have what she's having.",
-    author: "When Harry Met Sally...",
-  },
-  {
-    text: "You know how to whistle, don't you, Steve? You just put your lips together and blow.",
-    author: "To Have and Have Not",
-  },
-  {
-    text: "You're gonna need a bigger boat.",
-    author: "Jaws",
-  },
-  {
-    text: "Badges? We don't need no stinkin' badges!",
-    author: "The Treasure of the Sierra Madre",
-  },
-  {
-    text: "I'll be back.",
-    author: "The Terminator",
-  },
-  {
-    text: "Today, I consider myself the luckiest man on the face of the earth.",
-    author: "The Pride of the Yankees",
-  },
-  {
-    text: "If you build it, he will come.",
-    author: "Field of Dreams",
-  },
-  {
-    text: "Mama always said life was like a box of chocolates. You never know what you're gonna get.",
-    author: "Forrest Gump",
-  },
-  {
-    text: "We rob banks.",
-    author: "Bonnie and Clyde",
-  },
-  {
-    text: "Plastics.",
-    author: "The Graduate",
-  },
-  {
-    text: "We'll always have Paris.",
-    author: "Casablanca",
-  },
-  {
-    text: "I see dead people.",
-    author: "The Sixth Sense",
-  },
-  {
-    text: "Stella! Hey, Stella!",
-    author: "A Streetcar Named Desire",
-  },
-  {
-    text: "Oh, Jerry, don't let's ask for the moon. We have the stars.",
-    author: "Now, Voyager",
-  },
-  {
-    text: "Shane. Shane. Come back!",
-    author: "Shane",
-  },
-  {
-    text: "Well, nobody's perfect.",
-    author: "Some Like It Hot",
-  },
-  {
-    text: "It's alive! It's alive!",
-    author: "Frankenstein",
-  },
-  {
-    text: "Houston, we have a problem.",
-    author: "Apollo 13",
-  },
-  {
-    text: "You've got to ask yourself one question: 'Do I feel lucky?' Well, do ya, punk?",
-    author: "Dirty Harry",
-  },
-  {
-    text: "You had me at ‘hello.’",
-    author: "Jerry Maguire",
-  },
-  {
-    text: "One morning I shot an elephant in my pajamas. How he got in my pajamas, I don't know.",
-    author: "Animal Crackers",
-  },
-  {
-    text: "There's no crying in baseball!",
-    author: "A League of Their Own",
-  },
-  {
-    text: "La-dee-da, la-dee-da.",
-    author: "Annie Hall",
-  },
-  {
-    text: "A boy's best friend is his mother.",
-    author: "Psycho",
-  },
-  {
-    text: "Greed, for lack of a better word, is good.",
-    author: "Wall Street",
-  },
-  {
-    text: "Keep your friends close, but your enemies closer.",
-    author: "The Godfather Part II",
-  },
-  {
-    text: "As God is my witness, I'll never be hungry again.",
-    author: "Gone with the Wind",
-  },
-  {
-    text: "Well, here's another nice mess you've gotten me into!",
-    author: "Sons of the Desert",
-  },
-  {
-    text: "Say 'hello' to my little friend!",
-    author: "Scarface",
-  },
-  {
-    text: "What a dump.",
-    author: "Beyond the Forest",
-  },
-  {
-    text: "Mrs. Robinson, you're trying to seduce me. Aren't you?",
-    author: "The Graduate",
-  },
-  {
-    text: "Gentlemen, you can't fight in here! This is the War Room!",
-    author:
-      "Dr. Strangelove or: How I Learned to Stop Worrying and Love the Bomb",
-  },
-  {
-    text: "Elementary, my dear Watson.",
-    author: "The Adventures of Sherlock Holmes",
-  },
-  {
-    text: "Get your stinking paws off me, you damned dirty ape.",
-    author: "Planet of the Apes",
-  },
-  {
-    text: "Of all the gin joints in all the towns in all the world, she walks into mine.",
-    author: "Casablanca",
-  },
-  {
-    text: "Here's Johnny!",
-    author: "The Shining",
-  },
-  {
-    text: "They're here!",
-    author: "Poltergeist",
-  },
-  {
-    text: "Is it safe?",
-    author: "Marathon Man",
-  },
-  {
-    text: "Wait a minute, wait a minute. You ain't heard nothin' yet!",
-    author: "The Jazz Singer",
-  },
-  {
-    text: "No wire hangers, ever!",
-    author: "Mommie Dearest",
-  },
-  {
-    text: "Mother of mercy, is this the end of Rico?",
-    author: "Little Caesar",
-  },
-  {
-    text: "Forget it, Jake, it's Chinatown.",
-    author: "Chinatown",
-  },
-  {
-    text: "I have always depended on the kindness of strangers.",
-    author: "A Streetcar Named Desire",
-  },
-  {
-    text: "Hasta la vista, baby.",
-    author: "Terminator 2: Judgment Day",
-  },
-  {
-    text: "Soylent Green is people!",
-    author: "Soylent Green",
-  },
-  {
-    text: "Open the pod bay doors, HAL.",
-    author: "2001: A Space Odyssey",
-  },
-  {
-    text: "Striker: Surely you can't be serious. Rumack: I am serious…and don't call me Shirley.",
-    author: "Airplane!",
-  },
-  {
-    text: "Yo, Adrian!",
-    author: "Rocky",
-  },
-  {
-    text: "Hello, gorgeous.",
-    author: "Funny Girl",
-  },
-  {
-    text: "Toga! Toga!",
-    author: "Animal House",
-  },
-  {
-    text: "Listen to them. Children of the night. What music they make.",
-    author: "Dracula",
-  },
-  {
-    text: "Oh, no, it wasn't the airplanes. It was Beauty killed the Beast.",
-    author: "King Kong",
+    text: "There’s some good in this world, Mr. Frodo, and it’s worth fighting for.",
+    author: "Samwise Gamgee, The Lord of the Rings: The Two Towers",
   },
   {
     text: "My precious.",
-    author: "The Lord of the Rings: The Two Towers",
+    author: "Gollum, The Lord of the Rings: The Two Towers",
   },
   {
-    text: "Attica! Attica!",
-    author: "Dog Day Afternoon",
+    text: "You shall not pass!",
+    author: "Gandalf, The Lord of the Rings: The Fellowship of the Ring",
   },
   {
-    text: "Sawyer, you're going out a youngster, but you've got to come back a star!",
-    author: "42nd Street",
+    text: "I wish the Ring had never come to me. I wish none of this had happened.",
+    author: "Frodo Baggins, The Lord of the Rings: The Fellowship of the Ring",
   },
   {
-    text: "Listen to me, mister. You're my knight in shining armor. Don't you forget it. You're going to get back on that horse, and I'm going to be right behind you, holding on tight, and away we're gonna go, go, go!",
-    author: "On Golden Pond",
+    text: "All we have to decide is what to do with the time that is given us.",
+    author: "Gandalf, The Lord of the Rings: The Fellowship of the Ring",
   },
   {
-    text: "Tell 'em to go out there with all they got and win just one for the Gipper.",
-    author: "Knute Rockne, All American",
+    text: "The world is not in your books and maps. It’s out there.",
+    author: "Gandalf, The Hobbit: An Unexpected Journey",
   },
   {
-    text: "A martini. Shaken, not stirred.",
-    author: "Goldfinger",
+    text: "Home is now behind you, the world is ahead!",
+    author: "Gandalf, The Hobbit: An Unexpected Journey",
   },
   {
-    text: "Who's on first?",
-    author: "The Naughty Nineties",
+    text: "I’m going on an adventure!",
+    author: "Bilbo Baggins, The Hobbit: An Unexpected Journey",
   },
   {
-    text: "Cinderella story. Outta nowhere. A former greenskeeper, now, about to become the Masters champion. It looks like a miracle… It's in the hole! It's in the hole! It's in the hole!",
-    author: "Caddyshack",
+    text: "True courage is about knowing not when to take a life, but when to spare one.",
+    author: "Gandalf, The Hobbit: An Unexpected Journey",
   },
   {
-    text: "Life is a banquet, and most poor suckers are starving to death!",
-    author: "Auntie Mame",
+    text: "May the odds be ever in your favor.",
+    author: "Effie Trinket, The Hunger Games",
   },
   {
-    text: "If you are a minority of one, the truth is the truth.",
-    author: "Gandhi",
+    text: "I volunteer as tribute!",
+    author: "Katniss Everdeen, The Hunger Games",
   },
   {
-    text: "You've got to ask yourself one question: 'Do I feel lucky?' Well, do ya, punk?",
-    author: "Dirty Harry",
+    text: "Hope. It is the only thing stronger than fear.",
+    author: "President Snow, The Hunger Games",
   },
   {
-    text: "I'm king of the world!",
-    author: "Titanic",
+    text: "Remember who the real enemy is.",
+    author: "Haymitch Abernathy, The Hunger Games: Catching Fire",
   },
   {
-    text: "I know what you're thinking: 'Did he fire six shots or only five?' Well, to tell you the truth, in all this excitement I kind of lost track myself. But being this is a .44 Magnum, the most powerful handgun in the world, and would blow your head clean off, you've got to ask yourself one question: 'Do I feel lucky?' Well, do you, punk?",
-    author: "Dirty Harry",
+    text: "Fire is catching! And if we burn, you burn with us!",
+    author: "Katniss Everdeen, The Hunger Games: Mockingjay - Part 1",
   },
   {
-    text: "Well, nobody's perfect.",
-    author: "Some Like It Hot",
+    text: "It takes ten times as long to put yourself back together as it does to fall apart.",
+    author: "Finnick Odair, The Hunger Games: Mockingjay - Part 1",
   },
   {
-    text: "It's alive! It's alive!",
-    author: "Frankenstein",
+    text: "You love me. Real or not real?",
+    author: "Peeta Mellark, The Hunger Games: Mockingjay - Part 2",
   },
   {
-    text: "I'm the king of the world!",
-    author: "Titanic",
+    text: "We’re fickle, stupid beings with poor memories and a great gift for self-destruction.",
+    author: "Plutarch Heavensbee, The Hunger Games: Mockingjay - Part 2",
+  },
+  { text: "I see you.", author: "Jake Sully, Avatar" },
+  { text: "I’m the king of the world!", author: "Jack Dawson, Titanic" },
+  {
+    text: "I’ll never let go, Jack. I’ll never let go.",
+    author: "Rose DeWitt Bukater, Titanic",
+  },
+  {
+    text: "Nobody puts Baby in a corner.",
+    author: "Johnny Castle, Dirty Dancing",
+  },
+  {
+    text: "Me? I'm scared of everything. I'm scared of what I saw, I'm scared of what I did, of who I am, and most of all I'm scared of walking out of this room and never feeling the rest of my whole life the way I feel when I'm with you.",
+    author: "Baby, Dirty Dancing",
+  },
+  {
+    text: "It’s not about the money. It’s about sending a message.",
+    author: "Unknown, The Dark Knight",
+  },
+  {
+    text: "With great power comes great responsibility.",
+    author: "Unknown, Spider-Man",
+  },
+  { text: "Why so serious?", author: "Unknown, The Dark Knight" },
+  {
+    text: "I’m not a hero. I’m a high-functioning sociopath. Merry Christmas!",
+    author: "Sherlock Holmes, Sherlock",
+  },
+  { text: "It's a trap!", author: "Unknown, Star Wars: Return of the Jedi" },
+  { text: "Inconceivable!", author: "Unknown, The Princess Bride" },
+  { text: "You’re gonna need a bigger boat.", author: "Unknown, Jaws" },
+  { text: "I am Groot.", author: "Groot, Guardians of the Galaxy" },
+  { text: "Just keep swimming.", author: "Dory, Finding Nemo" },
+  { text: "To infinity and beyond!", author: "Buzz Lightyear, Toy Story" },
+  { text: "I’ll be back.", author: "Unknown, The Terminator" },
+  { text: "Houston, we have a problem.", author: "Unknown, Apollo 13" },
+  { text: "I am Iron Man.", author: "Tony Stark, Iron Man" },
+  { text: "I'm Batman.", author: "Unknown, Batman" },
+  { text: "Here's Johnny!", author: "Unknown, The Shining" },
+  { text: "I drink your milkshake!", author: "Unknown, There Will Be Blood" },
+  { text: "I see dead people.", author: "Unknown, The Sixth Sense" },
+  { text: "You can't handle the truth!", author: "Unknown, A Few Good Men" },
+  { text: "E.T. phone home.", author: "E.T., E.T. the Extra-Terrestrial" },
+  { text: "Yippee-ki-yay, motherfucker!", author: "Unknown, Die Hard" },
+  { text: "Here's looking at you, kid.", author: "Unknown, Casablanca" },
+  {
+    text: "Frankly, my dear, I don't give a damn.",
+    author: "Unknown, Gone with the Wind",
+  },
+  { text: "May the Force be with you.", author: "Unknown, Star Wars" },
+  { text: "I'm the king of the world!", author: "Jack Dawson, Titanic" },
+  { text: "Elementary, my dear Watson.", author: "Unknown, Sherlock Holmes" },
+  {
+    text: "Hasta la vista, baby.",
+    author: "Unknown, Terminator 2: Judgment Day",
+  },
+  { text: "Bond. James Bond.", author: "Unknown, Dr. No" },
+  {
+    text: "Keep your friends close, but your enemies closer.",
+    author: "Unknown, The Godfather Part II",
+  },
+  { text: "Show me the money!", author: "Unknown, Jerry Maguire" },
+  { text: "You had me at 'hello.'", author: "Unknown, Jerry Maguire" },
+  { text: "I see you.", author: "Jake Sully, Avatar" },
+  { text: "I’m flying, Jack!", author: "Rose DeWitt Bukater, Titanic" },
+  {
+    text: "I volunteer as tribute!",
+    author: "Katniss Everdeen, The Hunger Games",
+  },
+  {
+    text: "My precious.",
+    author: "Gollum, The Lord of the Rings: The Two Towers",
+  },
+  {
+    text: "You shall not pass!",
+    author: "Gandalf, The Lord of the Rings: The Fellowship of the Ring",
+  },
+  {
+    text: "Even the smallest person can change the course of the future.",
+    author: "Galadriel, The Lord of the Rings: The Fellowship of the Ring",
+  },
+  {
+    text: "May the odds be ever in your favor.",
+    author: "Effie Trinket, The Hunger Games",
+  },
+  {
+    text: "I wish the Ring had never come to me. I wish none of this had happened.",
+    author: "Frodo Baggins, The Lord of the Rings: The Fellowship of the Ring",
+  },
+  {
+    text: "There’s some good in this world, Mr. Frodo, and it’s worth fighting for.",
+    author: "Samwise Gamgee, The Lord of the Rings: The Two Towers",
+  },
+  {
+    text: "I’m going on an adventure!",
+    author: "Bilbo Baggins, The Hobbit: An Unexpected Journey",
+  },
+  {
+    text: "Home is now behind you, the world is ahead!",
+    author: "Gandalf, The Hobbit: An Unexpected Journey",
+  },
+  {
+    text: "True courage is about knowing not when to take a life, but when to spare one.",
+    author: "Gandalf, The Hobbit: An Unexpected Journey",
+  },
+  {
+    text: "Hope. It is the only thing stronger than fear.",
+    author: "President Snow, The Hunger Games",
+  },
+  {
+    text: "Remember who the real enemy is.",
+    author: "Haymitch Abernathy, The Hunger Games: Catching Fire",
+  },
+  {
+    text: "Fire is catching! And if we burn, you burn with us!",
+    author: "Katniss Everdeen, The Hunger Games: Mockingjay - Part 1",
+  },
+  {
+    text: "It takes ten times as long to put yourself back together as it does to fall apart.",
+    author: "Finnick Odair, The Hunger Games: Mockingjay - Part 1",
+  },
+  {
+    text: "You love me. Real or not real?",
+    author: "Peeta Mellark, The Hunger Games: Mockingjay - Part 2",
+  },
+  {
+    text: "We’re fickle, stupid beings with poor memories and a great gift for self-destruction.",
+    author: "Plutarch Heavensbee, The Hunger Games: Mockingjay - Part 2",
+  },
+  {
+    text: "I am not afraid to keep on living, I am not afraid to walk this world alone.",
+    author: "Unknown, Harry Potter and the Goblet of Fire",
+  },
+  {
+    text: "It is our choices, Harry, that show what we truly are, far more than our abilities.",
+    author: "Albus Dumbledore, Harry Potter and the Chamber of Secrets",
+  },
+  {
+    text: "After all this time? Always.",
+    author: "Severus Snape, Harry Potter and the Deathly Hallows",
+  },
+  {
+    text: "We’ve all got both light and dark inside us. What matters is the part we choose to act on. That’s who we really are.",
+    author: "Sirius Black, Harry Potter and the Order of the Phoenix",
   },
 ];

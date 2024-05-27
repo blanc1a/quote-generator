@@ -12,13 +12,15 @@
 
 <body>
     <div class="container" id="container">
+        <!--QUOTE-->
         <div class="text">
             <i class="fas fa-quote-left"></i>
             <!--alt+Z => shortcut for word-wrap-->
-            <span id="quote">You think the dead we loved truly ever leave us? You think that we don’t recall them more
-                clearly in times of great trouble?</span>
+            <span id="quote"></span>
         </div>
-        <div class="author"><span id="author">Albus Dumbledore</span></div>
+        <!--AUTHOR-->
+        <div class="author"><span id="author"></span></div>
+        <!--BUTTONS-->
         <div class="btn-container">
             <button class="twitter-btn" id="twitter" title="Tweet This!">
                 <i class="fab fa-twitter"></i>
@@ -27,9 +29,12 @@
 
         </div>
     </div>
+    <!--LOADER-->
+    <div class="loader" id="loader"></div>
     <!-- Script -->
-    <script src="quotes.js"></script>
-    <script src="script.js"></script>
+    <!-- <script src="quotes.js"></script>
+    <script src="script-with-localAPI.js"></script> -->
+    <script src="script-with-publicAPI.js"></script>
 </body>
 
 </html>
