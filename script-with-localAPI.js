@@ -22,11 +22,15 @@ function changeBackground() {
   //change background according to movie
   if (author.textContent.includes("Harry Potter")) {
     document.body.style.background = `url("./harrypotter.jpg")`;
+    document.body.style.backgroundRepeat = "no-repeat";
+    document.body.style.backgroundSize = "cover";
   } else if (
     author.textContent.includes("The Lord of the Rings") ||
     author.textContent.includes("Hobbit")
   ) {
     document.body.style.background = `url("./lordoftherings.jpg")`;
+    document.body.style.backgroundRepeat = "no-repeat";
+    document.body.style.backgroundSize = "cover";
   } else if (author.textContent.includes("Titanic")) {
     document.body.style.background = `url("./titanic.jpg")`;
     document.body.style.backgroundSize = "cover";
