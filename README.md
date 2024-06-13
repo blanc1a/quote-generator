@@ -16,3 +16,8 @@ This project is a Quote Generator built using HTML, CSS, and Vanilla JavaScript.
 - Fetch random quotes from a local Mock API.
 - Display the quotes on the web page.
 - Customizable styling to enhance the user experience.
+- I have added my own feature, independent of the task: the background images adjust to the quotes from the movies
+
+## Disclaimer
+
+The images used are free to use and from the sites Unsplash and wallpapers.com - but are used only for personal reasons and for learning purposes.
