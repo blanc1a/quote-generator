@@ -8,7 +8,7 @@ body {
   margin: 0;
   min-height: 100vh;
   background-color: #e45d87;
-  background: url("./bg_bggenerator_com.jpg");
+  background: url("./default.jpg");
   background-size: cover;
   color: black;
   font-family: "Lato", sans-serif;
@@ -85,11 +85,11 @@ button:active {
 }
 
 .twitter-btn {
-  color: #e45d87;
+  color: whitesmoke;
 }
 
 #new-quote {
-  color: #fdc4ba;
+  color: whitesmoke;
 }
 
 .fa-twitter {

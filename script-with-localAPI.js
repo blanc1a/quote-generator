@@ -18,6 +18,82 @@ function removeLoadingSpinner() {
   quoteContainer.hidden = false;
 }
 
+function changeBackground() {
+  //change background according to movie
+  if (author.textContent.includes("Harry Potter")) {
+    document.body.style.background = `url("./harrypotter.jpg")`;
+  } else if (
+    author.textContent.includes("The Lord of the Rings") ||
+    author.textContent.includes("Hobbit")
+  ) {
+    document.body.style.background = `url("./lordoftherings.jpg")`;
+  } else if (author.textContent.includes("Titanic")) {
+    document.body.style.background = `url("./titanic.jpg")`;
+    document.body.style.backgroundSize = "cover";
+    document.body.style.backgroundRepeat = "no-repeat";
+  } else if (author.textContent.includes("Hunger Games")) {
+    document.body.style.background = `url("./hungergames.jpg")`;
+    document.body.style.backgroundRepeat = "no-repeat";
+    document.body.style.backgroundSize = "cover";
+  } else if (author.textContent.includes("Avatar")) {
+    document.body.style.background = `url("./avatar.jpg")`;
+    document.body.style.backgroundRepeat = "no-repeat";
+    document.body.style.backgroundSize = "cover";
+  } else if (author.textContent.includes("Nemo")) {
+    document.body.style.background = `url("./findingnemo.jpg")`;
+    document.body.style.backgroundRepeat = "no-repeat";
+    document.body.style.backgroundSize = "cover";
+  } else if (author.textContent.includes("Dirty Dancing")) {
+    document.body.style.background = `url("./dirtydancing.jpg")`;
+    document.body.style.backgroundRepeat = "no-repeat";
+    document.body.style.backgroundSize = "cover";
+  } else if (author.textContent.includes("Guardian")) {
+    document.body.style.background = `url("./guardiansofthegalaxy.jpg")`;
+    document.body.style.backgroundRepeat = "no-repeat";
+    document.body.style.backgroundSize = "cover";
+  } else if (author.textContent.includes("Batman")) {
+    document.body.style.background = `url("./Batman.jpg")`;
+    document.body.style.backgroundRepeat = "no-repeat";
+    document.body.style.backgroundSize = "cover";
+  } else if (author.textContent.includes("Iron")) {
+    document.body.style.background = `url("./ironman.jpg")`;
+    document.body.style.backgroundRepeat = "no-repeat";
+    document.body.style.backgroundSize = "cover";
+  } else if (author.textContent.includes("Bond")) {
+    document.body.style.background = `url("./jamesbond.jpg")`;
+    document.body.style.backgroundRepeat = "no-repeat";
+    document.body.style.backgroundSize = "cover";
+  } else if (author.textContent.includes("Jaws")) {
+    document.body.style.background = `url("./jaws.jpg")`;
+    document.body.style.backgroundRepeat = "no-repeat";
+    document.body.style.backgroundSize = "cover";
+  } else if (author.textContent.includes("Sherlock")) {
+    document.body.style.background = `url("./sherlock.jpg")`;
+    document.body.style.backgroundRepeat = "no-repeat";
+    document.body.style.backgroundSize = "cover";
+  } else if (author.textContent.includes("Spider")) {
+    document.body.style.background = `url("./spiderman.jpg")`;
+    document.body.style.backgroundRepeat = "no-repeat";
+    document.body.style.backgroundSize = "cover";
+  } else if (author.textContent.includes("Star Wars")) {
+    document.body.style.background = `url("./starwars.jpg")`;
+    document.body.style.backgroundRepeat = "no-repeat";
+    document.body.style.backgroundSize = "cover";
+  } else if (author.textContent.includes("Terminator")) {
+    document.body.style.background = `url("./terminator.jpg")`;
+    document.body.style.backgroundRepeat = "no-repeat";
+    document.body.style.backgroundSize = "cover";
+  } else if (author.textContent.includes("Dark Knight")) {
+    document.body.style.background = `url("./thedarkknight.jpg")`;
+    document.body.style.backgroundRepeat = "no-repeat";
+    document.body.style.backgroundSize = "cover";
+  } else if (author.textContent.includes("Toy Story")) {
+    document.body.style.background = `url("./toystory.jpg")`;
+    document.body.style.backgroundRepeat = "no-repeat";
+    document.body.style.backgroundSize = "cover";
+  }
+}
+
 // GET NEW QUOTE
 function getNewQuote() {
   showLoadingSpinner();
@@ -39,6 +115,7 @@ function getNewQuote() {
   }
   //set quote, hide loader
   quoteText.textContent = quote.text;
+  changeBackground();
   removeLoadingSpinner();
 }
 
